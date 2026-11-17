@@ -24,31 +24,81 @@
   <img src="screenshots/parkett-tiles-dark.webp" alt="Parkett with four panes: system info, a file list, htop and a git log" width="100%">
 </p>
 
-> [!NOTE]
-> The interface is available in English and German and follows the system language.
-> Translations are welcome: see `po/` and [docs/BUILDING.md](docs/BUILDING.md#translations).
-
 ## What it does
+
+<table>
+<tr>
+<td width="33%" valign="top">
 
 ### Split panes, the way Tilix did it
 
 Split any pane to the right or down with the buttons in the header bar or with a shortcut,
 as often as you like. Panes keep their proportions when the window changes size, can be
-maximized on their own, and refuse to get so small that nothing fits. Closed a pane by
-accident? Undo brings it back within eight seconds, together with the program that was
-running in it.
+maximized on their own, and refuse to get so small that nothing fits.
 
-### Layout mode and command palette
+</td>
+<td width="33%" valign="top">
+
+### Sessions that come back
+
+Parkett reopens your windows and tabs after a restart, with their layout, profiles, folders and
+your own tab titles. It saves continuously, so a session survives logging out or a crash.
+Closing the last tab ends the session, and the next start is a fresh one.
+
+</td>
+<td width="33%" valign="top">
+
+### Careful by default
+
+Parkett asks before it closes a pane in which a program still runs, shows multi-line text
+before pasting it, opens links only after Ctrl+click and only for web, mail and local file
+addresses, and refuses `file:` links that point to another computer.
+
+</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td width="55%"><img src="screenshots/parkett-layout-mode.webp" alt="Layout mode with numbered panes and the key bar at the bottom" width="100%"></td>
+<td valign="middle">
+
+### Layout mode
 
 Press Ctrl+Shift+L and every pane shows a number. Single keys now move the focus, swap panes,
-split, maximize, equalize or close them, and a bar at the bottom lists all keys. The command
-palette (Ctrl+Shift+P or a click on the window title) finds every action, tab, pane, template
-and profile, and shows the shortcut next to each action so you learn it along the way.
+split, maximize, equalize or close them, and a bar at the bottom lists all keys.
 
-<p align="center">
-  <img src="screenshots/parkett-layout-mode.webp" alt="Layout mode with numbered panes and the key bar at the bottom" width="49%">
-  <img src="screenshots/parkett-command-palette.webp" alt="The command palette filtering the split actions" width="49%">
-</p>
+### Undo for closed panes
+
+Closed a pane by accident? Undo brings it back within eight seconds, together with the program
+that was running in it.
+
+</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td valign="middle">
+
+### Command palette
+
+The command palette (Ctrl+Shift+P or a click on the window title) finds every action, tab, pane,
+template and profile, and shows the shortcut next to each action so you learn it along the way.
+
+### Shortcuts your way
+
+Every shortcut can be changed or turned off, with a conflict check.
+
+</td>
+<td width="55%"><img src="screenshots/parkett-command-palette.webp" alt="The command palette filtering the split actions" width="100%"></td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td width="55%"><img src="screenshots/parkett-template.webp" alt="The dialog for opening a template with folder and start commands" width="100%"></td>
+<td valign="middle">
 
 ### Templates with start commands
 
@@ -57,15 +107,13 @@ in it. Opening the template asks for the folder and shows the commands before an
 The commands are typed into the shell, so a pane stays a working shell after Ctrl+C.
 Templates are plain TOML files you can edit by hand or keep in your dotfiles.
 
-<p align="center">
-  <img src="screenshots/parkett-template.webp" alt="The dialog for opening a template with folder and start commands" width="80%">
-</p>
+</td>
+</tr>
+</table>
 
-### Sessions that come back
-
-Parkett reopens your windows and tabs after a restart, with their layout, profiles, folders and
-your own tab titles. It saves continuously, so a session survives logging out or a crash.
-Closing the last tab ends the session, and the next start is a fresh one.
+<table>
+<tr>
+<td valign="middle">
 
 ### Know where you are
 
@@ -75,42 +123,131 @@ containers purple, other users amber. The shades come from the color scheme, tex
 and every pane decides for itself, so a split with a local shell next to a remote one stays easy to
 tell apart.
 
-<p align="center">
-  <img src="screenshots/parkett-context-colors.webp" alt="Five panes: a local shell, an SSH connection with a blue line and badge, a toolbox container with a dashed purple line, a shell of another user with an amber line, and a root shell with a red frame, tint and badge; the header bar is red because the root pane has the focus" width="80%">
-</p>
+</td>
+<td width="55%"><img src="screenshots/parkett-context-colors.webp" alt="Five panes: a local shell, an SSH connection with a blue line and badge, a toolbox container with a dashed purple line, a shell of another user with an amber line, and a root shell with a red frame, tint and badge; the header bar is red because the root pane has the focus" width="100%"></td>
+</tr>
+</table>
 
-### Profiles and color schemes
+<table>
+<tr>
+<td width="40%"><img src="screenshots/parkett-color-schemes.webp" alt="Profile editor with color scheme tiles, each showing a light and a dark variant" width="100%"></td>
+<td valign="middle">
+
+### Profiles
 
 Profiles set the color scheme, font, cursor shape, bell, starting folder, environment
-variables, a command instead of the shell, and what happens when the program ends. Fourteen
-color schemes come with a light and a dark variant and follow the GNOME style, or you choose
-light or dark yourself. Schemes from Ptyxis and Tilix can be imported. A translucent
-background lets the desktop shine through while the header bar stays solid.
+variables, a command instead of the shell, and what happens when the program ends.
 
-<p align="center">
-  <img src="screenshots/parkett-color-schemes.webp" alt="Profile editor with color scheme tiles, each showing a light and a dark variant" width="44%">
-  <img src="screenshots/parkett-transparency.webp" alt="A translucent Parkett window in front of the Fedora wallpaper" width="54%">
-</p>
+### Color schemes
+
+Fourteen color schemes come with a light and a dark variant and follow the GNOME style, or you
+choose light or dark yourself. Schemes from Ptyxis and Tilix can be imported.
+
+</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td valign="middle">
+
+### Translucent background
+
+A translucent background lets the desktop shine through while the header bar stays solid.
 
 ### Part of your GNOME desktop
 
-- Opens folders from Nautilus: *In Parkett öffnen* (Open in Parkett) on selected folders, one tab per folder.
-- Sends a notification when a long command finishes in a pane you are not looking at; a click takes you there.
-- Follows the system monospace font, the accent color and dark mode, works on Wayland and X11.
-- Search per pane with case sensitivity and regular expressions, links open with Ctrl+click.
-- Every shortcut can be changed or turned off, with a conflict check.
-- A command line for scripts and launchers: `parkett -d ~/src --tab`, `parkett -t Logs -- journalctl -f`.
+Parkett follows the system monospace font, the accent color and dark mode, and works on Wayland
+and X11.
 
-<p align="center">
-  <img src="screenshots/parkett-search-light.webp" alt="Search in a git log in the light style, the match is highlighted" width="54%">
-  <img src="screenshots/parkett-nautilus.webp" alt="Nautilus context menu with the entry to open a folder in Parkett" width="44%">
-</p>
+</td>
+<td width="55%"><img src="screenshots/parkett-transparency.webp" alt="A translucent Parkett window in front of the Fedora wallpaper" width="100%"></td>
+</tr>
+</table>
 
-### Careful by default
+<table>
+<tr>
+<td width="55%"><img src="screenshots/parkett-search-light.webp" alt="Search in a git log in the light style, the match is highlighted" width="100%"></td>
+<td valign="middle">
 
-Parkett asks before it closes a pane in which a program still runs, shows multi-line text
-before pasting it, opens links only after Ctrl+click and only for web, mail and local file
-addresses, and refuses `file:` links that point to another computer.
+### Search and links
+
+Search per pane with case sensitivity and regular expressions, links open with Ctrl+click.
+
+### A command line for scripts
+
+For scripts and launchers: `parkett -d ~/src --tab`, `parkett -t Logs -- journalctl -f`.
+
+</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td valign="middle">
+
+### Open folders from Nautilus
+
+*In Parkett öffnen* (Open in Parkett) on selected folders opens one tab per folder.
+
+### Notifications for long commands
+
+Parkett sends a notification when a long command finishes in a pane you are not looking at;
+a click takes you there.
+
+</td>
+<td width="55%"><img src="screenshots/parkett-nautilus.webp" alt="Nautilus context menu with the entry to open a folder in Parkett" width="100%"></td>
+</tr>
+</table>
+
+## At a glance
+
+| | |
+|---|---|
+| **Runs on** | GNOME on Wayland and X11; Arch Linux, Fedora 44 and Ubuntu 26.04 work |
+| **Requirements** | GTK 4.18, libadwaita 1.9 and VTE 0.80 or newer |
+| **Languages** | Interface in English and German, follows the system language |
+| **Built with** | Rust, GTK 4, libadwaita and VTE |
+| **Network** | no background services, sends nothing over the network |
+| **Licence** | [GPL-3.0-or-later](LICENSE) |
+
+> [!NOTE]
+> The interface is available in English and German and follows the system language.
+> Translations are welcome: see `po/` and [docs/BUILDING.md](docs/BUILDING.md#translations).
+
+## Install
+
+> [!NOTE]
+> There are no packages for Parkett yet. AUR and Fedora COPR packages are planned. For now,
+> build it from source.
+
+1. Parkett needs GTK 4.18, libadwaita 1.9 and VTE 0.80 or newer: Arch Linux, Fedora 44 and
+   Ubuntu 26.04 work. Install the build dependencies:
+
+   ```sh
+   # Arch Linux
+   sudo pacman -S --needed rust meson gtk4 libadwaita vte4
+
+   # Fedora 44
+   sudo dnf install rust cargo meson gtk4-devel libadwaita-devel vte291-gtk4-devel
+
+   # Ubuntu 26.04
+   sudo apt install rustc cargo meson pkg-config libgtk-4-dev libadwaita-1-dev libvte-2.91-gtk4-dev
+   ```
+
+2. Then build and install Parkett for your user:
+
+   ```sh
+   git clone https://github.com/linuxundich/parkett.git
+   cd parkett
+   meson setup _build --prefix=$HOME/.local --buildtype=release
+   meson install -C _build
+   ```
+
+3. For the entry in the Nautilus context menu, install `nautilus-python` (Ubuntu:
+   `python3-nautilus`) and restart Nautilus with `nautilus -q`.
+
+More options, tests and the development setup are in [docs/BUILDING.md](docs/BUILDING.md).
 
 ## How it works
 
@@ -120,39 +257,6 @@ GTK that is covered by unit tests; the interface only rebuilds the widgets from 
 keep running whenever you split, swap or undo. Settings are stored in GSettings, profiles and
 templates as TOML files in `~/.config/parkett/`. Parkett runs no background services and
 sends nothing over the network.
-
-## Install
-
-> [!NOTE]
-> There are no packages for Parkett yet. AUR and Fedora COPR packages are planned. For now,
-> build it from source.
-
-Parkett needs GTK 4.18, libadwaita 1.9 and VTE 0.80 or newer: Arch Linux, Fedora 44 and
-Ubuntu 26.04 work. Install the build dependencies:
-
-```sh
-# Arch Linux
-sudo pacman -S --needed rust meson gtk4 libadwaita vte4
-
-# Fedora 44
-sudo dnf install rust cargo meson gtk4-devel libadwaita-devel vte291-gtk4-devel
-
-# Ubuntu 26.04
-sudo apt install rustc cargo meson pkg-config libgtk-4-dev libadwaita-1-dev libvte-2.91-gtk4-dev
-```
-
-Then build and install Parkett for your user:
-
-```sh
-git clone https://github.com/linuxundich/parkett.git
-cd parkett
-meson setup _build --prefix=$HOME/.local --buildtype=release
-meson install -C _build
-```
-
-For the entry in the Nautilus context menu, install `nautilus-python` (Ubuntu:
-`python3-nautilus`) and restart Nautilus with `nautilus -q`. More options, tests and the
-development setup are in [docs/BUILDING.md](docs/BUILDING.md).
 
 ## More
 
