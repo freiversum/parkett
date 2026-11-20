@@ -5,6 +5,8 @@ Format based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Added
+- About dialog: link "A star in the freiversum" to https://freiversum.de/, the umbrella site of
+  the author's independent projects.
 - Local Flatpak build (`build-aux/flatpak/build.sh`): GNOME 51 runtime, VTE and libghostty-vt built in, the
   shell runs on the host through `flatpak-spawn --host`. Not published anywhere.
 - Experimental libghostty terminal engine, off by default: build with `cargo build --features ghostty`

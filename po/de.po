@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: parkett\n"
 "Report-Msgid-Bugs-To: https://github.com/linuxundich/parkett/issues\n"
-"POT-Creation-Date: 2026-11-07 14:53+0100\n"
+"POT-Creation-Date: 2026-11-20 14:59+0100\n"
 "PO-Revision-Date: 2026-10-23 10:00+0200\n"
 "Last-Translator: Christoph Langner <mail@christoph-langner.de>\n"
 "Language-Team: German\n"
@@ -374,11 +374,15 @@ msgstr "Terminal mit geteilten Bereichen für GNOME"
 msgid "translator-credits"
 msgstr "Christoph Langner"
 
-#: app/src/main.rs:392
+#: app/src/main.rs:343
+msgid "A star in the freiversum"
+msgstr "Ein Stern im freiversum"
+
+#: app/src/main.rs:393
 msgid "Tab 1 … 9"
 msgstr "Reiter 1 … 9"
 
-#: app/src/main.rs:393
+#: app/src/main.rs:394
 msgid "Pane 1 … 9"
 msgstr "Bereich 1 … 9"
 
@@ -387,16 +391,16 @@ msgid "Shared input"
 msgstr "Gemeinsame Eingabe"
 
 #: app/src/pane.rs:236 app/src/pane.rs:351 app/src/shortcuts.rs:56
-#: app/src/terminal.rs:1525
+#: app/src/terminal.rs:1575
 msgid "Maximize pane"
 msgstr "Bereich maximieren"
 
 #: app/src/pane.rs:238 app/src/pane.rs:353 app/src/shortcuts.rs:53
-#: app/src/terminal.rs:1550
+#: app/src/terminal.rs:1600
 msgid "Close pane"
 msgstr "Bereich schließen"
 
-#: app/src/pane.rs:280 app/src/shortcuts.rs:75 app/src/terminal.rs:1534
+#: app/src/pane.rs:280 app/src/shortcuts.rs:75 app/src/terminal.rs:1584
 msgid "Read only"
 msgstr "Schreibgeschützt"
 
@@ -836,7 +840,7 @@ msgstr "Leiste anzeigen"
 msgid "Close pane (on success)"
 msgstr "Bereich schließen (bei Erfolg)"
 
-#: app/src/prefs.rs:742 app/src/terminal.rs:160
+#: app/src/prefs.rs:742 app/src/terminal.rs:164
 msgid "Restart"
 msgstr "Neu starten"
 
@@ -876,8 +880,8 @@ msgstr ""
 "Aktuell: {current}\n"
 "Neue Kombination drücken. Esc bricht ab, Rücktaste schaltet das Kürzel aus."
 
-#: app/src/prefs.rs:925 app/src/prefs.rs:1316 app/src/terminal.rs:1666
-#: app/src/terminal.rs:1721 app/src/window.rs:854 app/src/window.rs:874
+#: app/src/prefs.rs:925 app/src/prefs.rs:1316 app/src/terminal.rs:1716
+#: app/src/terminal.rs:1771 app/src/window.rs:854 app/src/window.rs:874
 #: app/src/window.rs:1335 app/src/window.rs:1393
 msgid "Cancel"
 msgstr "Abbrechen"
@@ -972,7 +976,7 @@ msgstr "Dieser Ordner ist schon ein Lesezeichen"
 msgid "Type"
 msgstr "Art"
 
-#: app/src/prefs.rs:1296 app/src/terminal.rs:444
+#: app/src/prefs.rs:1296 app/src/terminal.rs:453
 msgid "Command"
 msgstr "Befehl"
 
@@ -1043,12 +1047,12 @@ msgstr "Aufteilung"
 msgid "Comes from the tab the template was saved from; split or remove panes with the buttons on them."
 msgstr "Kommt aus dem Reiter, aus dem die Vorlage gespeichert wurde; mit den Knöpfen an den Bereichen teilen oder entfernen."
 
-#: app/src/prefs.rs:1528 app/src/shortcuts.rs:50 app/src/terminal.rs:1523
+#: app/src/prefs.rs:1528 app/src/shortcuts.rs:50 app/src/terminal.rs:1573
 #: app/src/window.rs:401 app/src/window.rs:1459
 msgid "Split right"
 msgstr "Rechts teilen"
 
-#: app/src/prefs.rs:1529 app/src/shortcuts.rs:51 app/src/terminal.rs:1524
+#: app/src/prefs.rs:1529 app/src/shortcuts.rs:51 app/src/terminal.rs:1574
 #: app/src/window.rs:402 app/src/window.rs:1460
 msgid "Split down"
 msgstr "Unten teilen"
@@ -1127,7 +1131,7 @@ msgstr "Bereiche"
 #: app/src/shortcuts.rs:71 app/src/shortcuts.rs:72 app/src/shortcuts.rs:73
 #: app/src/shortcuts.rs:74 app/src/shortcuts.rs:75 app/src/shortcuts.rs:76
 #: app/src/shortcuts.rs:77 app/src/shortcuts.rs:80 app/src/shortcuts.rs:84
-#: app/src/shortcuts.rs:85 app/src/terminal.rs:1541
+#: app/src/shortcuts.rs:85 app/src/terminal.rs:1591
 msgid "Terminal"
 msgstr "Terminal"
 
@@ -1184,7 +1188,7 @@ msgstr "Layout-Modus"
 msgid "Split automatically"
 msgstr "Automatisch teilen"
 
-#: app/src/shortcuts.rs:54 app/src/terminal.rs:1544
+#: app/src/shortcuts.rs:54 app/src/terminal.rs:1594
 msgid "Input to all panes"
 msgstr "Eingabe an alle Bereiche"
 
@@ -1192,7 +1196,7 @@ msgstr "Eingabe an alle Bereiche"
 msgid "Pane receives shared input"
 msgstr "Bereich empfängt gemeinsame Eingabe"
 
-#: app/src/shortcuts.rs:57 app/src/terminal.rs:1526
+#: app/src/shortcuts.rs:57 app/src/terminal.rs:1576
 msgid "Equalize sizes"
 msgstr "Größen angleichen"
 
@@ -1232,36 +1236,36 @@ msgstr "Trenner nach unten"
 msgid "Search"
 msgstr "Suchen"
 
-#: app/src/shortcuts.rs:69 app/src/terminal.rs:1506 app/src/window.rs:180
+#: app/src/shortcuts.rs:69 app/src/terminal.rs:1556 app/src/window.rs:180
 msgid "Copy"
 msgstr "Kopieren"
 
-#: app/src/shortcuts.rs:70 app/src/terminal.rs:1508 app/src/terminal.rs:1666
-#: app/src/terminal.rs:1721
+#: app/src/shortcuts.rs:70 app/src/terminal.rs:1558 app/src/terminal.rs:1716
+#: app/src/terminal.rs:1771
 msgid "Paste"
 msgstr "Einfügen"
 
-#: app/src/shortcuts.rs:71 app/src/terminal.rs:1510
+#: app/src/shortcuts.rs:71 app/src/terminal.rs:1560
 msgid "Select all"
 msgstr "Alles auswählen"
 
-#: app/src/shortcuts.rs:72 app/src/terminal.rs:1531
+#: app/src/shortcuts.rs:72 app/src/terminal.rs:1581
 msgid "Save output…"
 msgstr "Ausgabe speichern …"
 
-#: app/src/shortcuts.rs:73 app/src/terminal.rs:1509
+#: app/src/shortcuts.rs:73 app/src/terminal.rs:1559
 msgid "Paste special…"
 msgstr "Erweitert einfügen …"
 
-#: app/src/shortcuts.rs:74 app/src/terminal.rs:1507
+#: app/src/shortcuts.rs:74 app/src/terminal.rs:1557
 msgid "Copy as HTML"
 msgstr "Als HTML kopieren"
 
-#: app/src/shortcuts.rs:76 app/src/terminal.rs:1532
+#: app/src/shortcuts.rs:76 app/src/terminal.rs:1582
 msgid "Reset"
 msgstr "Zurücksetzen"
 
-#: app/src/shortcuts.rs:77 app/src/terminal.rs:1533
+#: app/src/shortcuts.rs:77 app/src/terminal.rs:1583
 msgid "Reset and clear"
 msgstr "Zurücksetzen und leeren"
 
@@ -1343,162 +1347,162 @@ msgid_plural "<b>Maximized</b> · {n} panes hidden"
 msgstr[0] "<b>Maximiert</b> · {n} Bereich ausgeblendet"
 msgstr[1] "<b>Maximiert</b> · {n} Bereiche ausgeblendet"
 
-#: app/src/terminal.rs:161 app/src/window.rs:854
+#: app/src/terminal.rs:165 app/src/window.rs:854
 msgid "Close"
 msgstr "Schließen"
 
-#: app/src/terminal.rs:442
+#: app/src/terminal.rs:451
 msgid "Command finished"
 msgstr "Befehl beendet"
 
-#: app/src/terminal.rs:445
+#: app/src/terminal.rs:454
 msgid "{command} · after {duration}"
 msgstr "{command} · nach {duration}"
 
-#: app/src/terminal.rs:457
+#: app/src/terminal.rs:466
 msgid "New output"
 msgstr "Neue Ausgabe"
 
-#: app/src/terminal.rs:472
+#: app/src/terminal.rs:481
 msgid "No output for {seconds} s"
 msgstr "Seit {seconds} s keine Ausgabe"
 
-#: app/src/terminal.rs:820
+#: app/src/terminal.rs:867
 msgid "<b>{program}</b> could not be started: {error}"
 msgstr "<b>{program}</b> konnte nicht gestartet werden: {error}"
 
-#: app/src/terminal.rs:863 app/src/terminal.rs:882
+#: app/src/terminal.rs:910 app/src/terminal.rs:929
 msgid "<b>Process exited</b>"
 msgstr "<b>Prozess beendet</b>"
 
-#: app/src/terminal.rs:883
+#: app/src/terminal.rs:930
 msgid "<b>Process exited</b> · exit code {code}"
 msgstr "<b>Prozess beendet</b> · Exit-Code {code}"
 
-#: app/src/terminal.rs:884
+#: app/src/terminal.rs:931
 msgid "<b>Process exited</b> · signal {signal}"
 msgstr "<b>Prozess beendet</b> · Signal {signal}"
 
-#: app/src/terminal.rs:887
+#: app/src/terminal.rs:934
 msgid "{text} · no automatic restart, exited immediately"
 msgstr "{text} · kein automatischer Neustart, endete sofort"
 
 #
-#: app/src/terminal.rs:1217
+#: app/src/terminal.rs:1267
 msgid "Command failed: {error}"
 msgstr "Befehl fehlgeschlagen: {error}"
 
-#: app/src/terminal.rs:1237
+#: app/src/terminal.rs:1287
 msgid "The path is on the other computer"
 msgstr "Der Pfad liegt auf dem anderen Rechner"
 
-#: app/src/terminal.rs:1245
+#: app/src/terminal.rs:1295
 msgid "“{path}” does not exist"
 msgstr "„{path}“ gibt es nicht"
 
-#: app/src/terminal.rs:1284
+#: app/src/terminal.rs:1334
 msgid "Link not opened"
 msgstr "Link nicht geöffnet"
 
-#: app/src/terminal.rs:1285
+#: app/src/terminal.rs:1335
 msgid "The link points to a file on another computer."
 msgstr "Der Link zeigt auf eine Datei auf einem anderen Rechner."
 
-#: app/src/terminal.rs:1287 app/src/window.rs:181
+#: app/src/terminal.rs:1337 app/src/window.rs:181
 msgid "OK"
 msgstr "OK"
 
-#: app/src/terminal.rs:1302
+#: app/src/terminal.rs:1352
 msgid "Link not opened: {error}"
 msgstr "Link nicht geöffnet: {error}"
 
-#: app/src/terminal.rs:1499
+#: app/src/terminal.rs:1549
 msgid "Open link"
 msgstr "Link öffnen"
 
-#: app/src/terminal.rs:1499
+#: app/src/terminal.rs:1549
 msgid "Copy link"
 msgstr "Link kopieren"
 
-#: app/src/terminal.rs:1513
+#: app/src/terminal.rs:1563
 msgid "Zoom in"
 msgstr "Vergrößern"
 
-#: app/src/terminal.rs:1514
+#: app/src/terminal.rs:1564
 msgid "Zoom out"
 msgstr "Verkleinern"
 
-#: app/src/terminal.rs:1515
+#: app/src/terminal.rs:1565
 msgid "Normal size"
 msgstr "Normale Größe"
 
-#: app/src/terminal.rs:1520
+#: app/src/terminal.rs:1570
 msgid "Search…"
 msgstr "Suchen …"
 
-#: app/src/terminal.rs:1537
+#: app/src/terminal.rs:1587
 msgid "Monitor activity"
 msgstr "Aktivität überwachen"
 
-#: app/src/terminal.rs:1538
+#: app/src/terminal.rs:1588
 msgid "Monitor silence"
 msgstr "Stille überwachen"
 
-#: app/src/terminal.rs:1545
+#: app/src/terminal.rs:1595
 msgid "This pane receives shared input"
 msgstr "Dieser Bereich empfängt gemeinsame Eingabe"
 
-#: app/src/terminal.rs:1594
+#: app/src/terminal.rs:1644
 msgid "Save output"
 msgstr "Ausgabe speichern"
 
-#: app/src/terminal.rs:1595
+#: app/src/terminal.rs:1645
 msgid "terminal-output.txt"
 msgstr "terminal-ausgabe.txt"
 
-#: app/src/terminal.rs:1610
+#: app/src/terminal.rs:1660
 msgid "Output saved to “{path}”"
 msgstr "Ausgabe gespeichert unter „{path}“"
 
-#: app/src/terminal.rs:1614
+#: app/src/terminal.rs:1664
 msgid "Output not saved: {error}"
 msgstr "Ausgabe nicht gespeichert: {error}"
 
-#: app/src/terminal.rs:1634
+#: app/src/terminal.rs:1684
 msgid "… ({n} more line)"
 msgid_plural "… ({n} more lines)"
 msgstr[0] "… ({n} weitere Zeile)"
 msgstr[1] "… ({n} weitere Zeilen)"
 
-#: app/src/terminal.rs:1640
+#: app/src/terminal.rs:1690
 msgid "Paste text with line break?"
 msgstr "Text mit Zeilenumbruch einfügen?"
 
-#: app/src/terminal.rs:1641
+#: app/src/terminal.rs:1691
 msgid "The text ends with a line break. If the shell does not support “bracketed paste”, it runs immediately."
 msgstr "Der Text endet mit einem Zeilenumbruch. Unterstützt die Shell kein „Bracketed Paste“, wird er sofort ausgeführt."
 
-#: app/src/terminal.rs:1645
+#: app/src/terminal.rs:1695
 msgid "Paste multi-line text?"
 msgstr "Mehrzeiligen Text einfügen?"
 
-#: app/src/terminal.rs:1646
+#: app/src/terminal.rs:1696
 msgid "The text has {lines} lines. If the shell does not support “bracketed paste”, they run immediately."
 msgstr "Der Text hat {lines} Zeilen. Unterstützt die Shell kein „Bracketed Paste“, werden sie sofort ausgeführt."
 
-#: app/src/terminal.rs:1705
+#: app/src/terminal.rs:1755
 msgid "Convert tabs to spaces"
 msgstr "Tabulatoren in Leerzeichen umwandeln"
 
-#: app/src/terminal.rs:1708
+#: app/src/terminal.rs:1758
 msgid "Spaces per tab"
 msgstr "Leerzeichen je Tabulator"
 
-#: app/src/terminal.rs:1713
+#: app/src/terminal.rs:1763
 msgid "Convert Windows line endings (CRLF) to LF"
 msgstr "Windows-Zeilenenden (CRLF) in LF umwandeln"
 
-#: app/src/terminal.rs:1719
+#: app/src/terminal.rs:1769
 msgid "Paste special"
 msgstr "Erweitert einfügen"
 

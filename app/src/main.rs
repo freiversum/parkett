@@ -340,6 +340,7 @@ fn setup_actions(app: &adw::Application) {
                 .translator_credits(i18n::gettext("translator-credits"))
                 .license_type(gtk::License::Gpl30)
                 .build();
+            dialog.add_link(&i18n::gettext("A star in the freiversum"), "https://freiversum.de/");
             dialog.present(app.active_window().as_ref());
         }
     });
