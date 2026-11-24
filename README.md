@@ -238,7 +238,7 @@ a click takes you there.
 2. Then build and install Parkett for your user:
 
    ```sh
-   git clone https://github.com/linuxundich/parkett.git
+   git clone https://github.com/freiversum/parkett.git
    cd parkett
    meson setup _build --prefix=$HOME/.local --buildtype=release
    meson install -C _build
@@ -263,7 +263,7 @@ sends nothing over the network.
 - [Usage guide](docs/USAGE.md): shortcuts, layout mode, profiles, templates, sessions, the command line and the file formats
 - [Changelog](CHANGELOG.md) · [Backlog and roadmap](BACKLOG.md) · [Architecture](docs/ARCHITECTURE.md) · [Packaging](docs/PACKAGING.md) · [Licenses](docs/LICENSES.md)
 - How it was designed: [analysis of Tilix](docs/ANALYSIS.md), [three design concepts](docs/CONCEPTS.md), [prototype](docs/PROTOTYPE.md), [MVP](docs/MVP.md), [quality assurance](docs/QA.md)
-- Found a bug or have an idea? [Open an issue](https://github.com/linuxundich/parkett/issues)
+- Found a bug or have an idea? [Open an issue](https://github.com/freiversum/parkett/issues)
 
 ## Use of AI
 

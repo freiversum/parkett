@@ -15,6 +15,7 @@ Format based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   `vte.sh`, screen reader text (role terminal, `GtkAccessibleText`), cursor and text blinking, bold-is-bright, and starting the shell on the host from inside a Flatpak sandbox (`flatpak-spawn --host`). Not complete yet, see `docs/LIBGHOSTTY.md`.
 
 ### Changed
+- The repository moved to the freiversum organization: https://github.com/freiversum/parkett. Old `github.com/linuxundich/parkett` links and clone URLs redirect.
 - README restructured: feature grid, screenshots beside the text, facts at a glance.
 - Internal: panes, tabs and the window no longer touch the VTE widget directly; they use new
   `Terminal` methods (focus, cursor, character size, selection), and every VTE call now lives in

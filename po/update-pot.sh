@@ -15,7 +15,7 @@ python3 po/extract_rust.py "$tmp/rust.pot" "${rust[@]}"
 xgettext --from-code=UTF-8 --add-comments=Translators -o "$tmp/other.pot" "${other[@]}"
 msgcat --use-first "$tmp/other.pot" "$tmp/rust.pot" -o "$tmp/all.pot"
 xgettext --from-code=UTF-8 --no-wrap --package-name=parkett \
-  --msgid-bugs-address=https://github.com/linuxundich/parkett/issues \
+  --msgid-bugs-address=https://github.com/freiversum/parkett/issues \
   -o po/parkett.pot "$tmp/all.pot"
 shopt -s nullglob
 for po in po/*.po; do

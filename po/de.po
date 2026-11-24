@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: parkett\n"
-"Report-Msgid-Bugs-To: https://github.com/linuxundich/parkett/issues\n"
+"Report-Msgid-Bugs-To: https://github.com/freiversum/parkett/issues\n"
 "POT-Creation-Date: 2026-11-20 14:59+0100\n"
 "PO-Revision-Date: 2026-10-23 10:00+0200\n"
 "Last-Translator: Christoph Langner <mail@christoph-langner.de>\n"
